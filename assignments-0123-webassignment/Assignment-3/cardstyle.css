@@ -1,0 +1,394 @@
+body {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+
+  .card {
+    flex-basis: 18%;
+    margin: 2%;
+    height: 320px;
+    min-width: 200px;
+    padding: 0;
+    position: relative;
+    border: 1px solid lightgray;
+    box-shadow: 10px 10px 10px 10px lightgray;
+  }
+  .card-top{
+    margin: 0;
+    padding: 0;
+    position:relative;
+  }
+  .commonLabel {
+    padding: 0;
+    margin: 0;
+    display: block;
+    height: 100%;
+    position: relative;
+  }
+
+  #card-1 {
+    height: 25%;
+    position: relative;
+    background-color: #bd071e;
+  }
+
+  #card-2 {
+    height: 25%;
+    position: relative;
+    background-color: #3b599a;
+  }
+
+  #card-3 {
+    height: 25%;
+    position: relative;
+    background-color: #c13584;
+  }
+
+  #card-4 {
+    height: 25%;
+    position: relative;
+    background-color: #1869ff;
+  }
+
+  #card-5 {
+    height: 25%;
+    position: relative;
+    background-color: #ea4c88;
+  }
+
+  #card-6 {
+    height: 25%;
+    position: relative;
+    background-color: #1ca1f1;
+  }
+
+  #card-7 {
+    height: 25%;
+    position: relative;
+    background-color: #f57f01;
+  }
+
+  #card-8 {
+    height: 25%;
+    position: relative;
+    background-color: #0177b6;
+  }
+
+  .check-box {
+    border: 0.1vw solid white;
+    width: 8%;
+    aspect-ratio: 1/1;
+    border-radius: 10%;
+    margin-right: 50%;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    right: -46%;
+    top:5%;
+    justify-content: center;
+  }
+
+  .tick-mark-1 {
+    width: 25%;
+    height: 60%;
+    border-style: solid;
+    border-color: transparent #bd071e #bd071e transparent;
+    transform: rotate(45deg);
+  }
+
+  .tick-mark-2 {
+    width: 25%;
+    height: 60%;
+    border-style: solid;
+    border-color: transparent #3b599a #3b599a transparent;
+    transform: rotate(45deg);
+  }
+
+  .tick-mark-3 {
+    width: 25%;
+    height: 60%;
+    border-style: solid;
+    border-color: transparent #c13584 #c13584 transparent;
+    transform: rotate(45deg);
+  }
+
+  .tick-mark-4 {
+    width: 25%;
+    height: 60%;
+    border-style: solid;
+    border-color: transparent #1869ff #1869ff transparent;
+    transform: rotate(45deg);
+  }
+
+  .tick-mark-5 {
+    width: 25%;
+    height: 60%;
+    border-style: solid;
+    border-color: transparent #ea4c88 #ea4c88 transparent;
+    transform: rotate(45deg);
+  }
+
+  .tick-mark-6 {
+    width: 25%;
+    height: 60%;
+    border-style: solid;
+    border-color: transparent #1ca1f1 #1ca1f1 transparent;
+    transform: rotate(45deg);
+  }
+
+  .tick-mark-7 {
+    width: 25%;
+    height: 60%;
+    border-style: solid;
+    border-color: transparent #f57f01 #f57f01 transparent;
+    transform: rotate(45deg);
+  }
+
+  .tick-mark-8 {
+    width: 25%;
+    height: 60%;
+    border-style: solid;
+    border-color: transparent #0177b6 #0177b6 transparent;
+    transform: rotate(45deg);
+  }
+
+  .profile-pic {
+    height: 80%;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    border-radius: 50%;
+    padding: 5px;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 0px;
+  }
+
+  .card-bottom {
+    height: calc(100% - 25%);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .Line-1 {
+    font-family: 'Playball', cursive;
+    text-align: center;
+    margin-top: 20%;
+    font-size: large;
+    color: grey;
+  }
+
+  .Line-2 {
+    margin-top: 4%;
+    text-align: center;
+    font-family: 'Noto Sans Warang Citi', sans-serif;
+    padding: 5px 10px 10px 5px;
+    font-size: small;
+    color: grey;
+  }
+
+  .top-icon {
+    position: absolute;
+    left: 5%;
+    top: 12%;
+    color: white;
+    min-width: 20px;
+  }
+
+  #totalCard-1:checked~.commonLabel #card-1 {
+    background-color: #fff;
+  }
+
+  
+  #totalCard-1:checked~.commonLabel>.card-bottom{
+    background-color: #bd071e;
+    color: white;
+    overflow: auto;
+  }
+  
+  
+  #totalCard-1:checked~.commonLabel>.card-bottom > .Line-1,
+  #totalCard-1:checked~.commonLabel>.card-bottom > .Line-2
+  {
+    color: white;
+  }
+  
+  #totalCard-1:checked~.commonLabel>.card-top>.check-box {
+    border: 2px solid #bd071e;
+  }
+
+  #totalCard-1:checked~.commonLabel>.card-top>.top-icon {
+    color: #bd071e;
+  }
+
+  #totalCard-2:checked~.commonLabel #card-2 {
+    background-color: #fff;
+  }
+
+  #totalCard-2:checked~.commonLabel>.card-bottom{
+    background-color: #3b599a;
+    color: white;
+    overflow: auto;
+  }
+  
+  #totalCard-2:checked~.commonLabel>.card-bottom > .Line-1,
+  #totalCard-2:checked~.commonLabel>.card-bottom > .Line-2
+  {
+    color: white;
+  }
+
+  #totalCard-2:checked~.commonLabel>.card-top>.check-box {
+    border: 2px solid #3b599a;
+  }
+
+  #totalCard-2:checked~.commonLabel>.card-top>.top-icon {
+    color: #3b599a;
+  }
+
+
+  #totalCard-3:checked~.commonLabel #card-3 {
+    background-color: #fff;
+  }
+
+  #totalCard-3:checked~.commonLabel>.card-bottom {
+    color: white;
+    background-color: #c13584;
+    overflow: auto;
+  }
+
+  #totalCard-3:checked~.commonLabel>.card-bottom > .Line-1,
+  #totalCard-3:checked~.commonLabel>.card-bottom > .Line-2
+  {
+    color: white;
+  }
+  #totalCard-3:checked~.commonLabel>.card-top>.check-box {
+    border: 2px solid #c13584;
+  }
+
+  #totalCard-3:checked~.commonLabel>.card-top>.top-icon {
+    color: #c13584;
+  }
+
+  #totalCard-4:checked~.commonLabel>.card-bottom {
+    color: white;
+    background-color: #1869ff;
+    overflow: auto;
+  }
+
+  #totalCard-4:checked~.commonLabel>.card-bottom > .Line-1,
+  #totalCard-4:checked~.commonLabel>.card-bottom > .Line-2
+  {
+    color: white;
+  }
+
+  #totalCard-4:checked~.commonLabel #card-4 {
+    background-color: #fff;
+  }
+
+  #totalCard-4:checked~.commonLabel>.card-top>.check-box {
+    border: 2px solid #1869ff;
+  }
+
+  #totalCard-4:checked~.commonLabel>.card-top>.top-icon {
+    color: #1869ff;
+  }
+
+  #totalCard-5:checked~.commonLabel #card-5 {
+    background-color: #fff;
+  }
+
+  #totalCard-5:checked~.commonLabel>.card-bottom {
+    color: white;
+    background-color: #ea4c88;
+    overflow: auto;
+  }
+
+  #totalCard-5:checked~.commonLabel>.card-bottom > .Line-1,
+  #totalCard-5:checked~.commonLabel>.card-bottom > .Line-2
+  {
+    color: white;
+  }
+  #totalCard-5:checked~.commonLabel>.card-top>.check-box {
+    border: 2px solid #ea4c88;
+  }
+
+  #totalCard-5:checked~.commonLabel>.card-top>.top-icon {
+    color: #ea4c88;
+  }
+
+  #totalCard-6:checked~.commonLabel #card-6 {
+    background-color: #fff;
+  }
+
+  #totalCard-6:checked~.commonLabel>.card-bottom {
+    color: white;
+    background-color: #1ca1f1;
+    overflow: auto;
+  }
+
+  #totalCard-6:checked~.commonLabel>.card-bottom > .Line-1,
+  #totalCard-6:checked~.commonLabel>.card-bottom > .Line-2
+  {
+    color: white;
+  }
+  #totalCard-6:checked~.commonLabel>.card-top>.check-box {
+    border: 2px solid #1ca1f1;
+  }
+
+  #totalCard-6:checked~.commonLabel>.card-top>.top-icon {
+    color: #1ca1f1;
+  }
+
+
+  #totalCard-7:checked~.commonLabel #card-7 {
+    background-color: #fff;
+  }
+
+  #totalCard-7:checked~.commonLabel>.card-bottom {
+    color: white;
+    background-color: #f57f01;
+    overflow: auto;
+  }
+
+  #totalCard-7:checked~.commonLabel>.card-bottom > .Line-1,
+  #totalCard-7:checked~.commonLabel>.card-bottom > .Line-2
+  {
+    color: white;
+  }
+  #totalCard-7:checked~.commonLabel>.card-top>.check-box {
+    border: 2px solid #f57f01;
+  }
+
+  #totalCard-7:checked~.commonLabel>.card-top>.top-icon {
+    color: #f57f01;
+  }
+
+  #totalCard-8:checked~.commonLabel #card-8 {
+    background-color: #fff;
+  }
+
+  #totalCard-8:checked~.commonLabel>.card-bottom {
+    color: white;
+    background-color: #0177b6;
+    overflow: auto;
+  }
+
+  #totalCard-8:checked~.commonLabel>.card-bottom > .Line-1,
+  #totalCard-8:checked~.commonLabel>.card-bottom > .Line-2
+  {
+    color: white;
+  }
+
+  #totalCard-8:checked~.commonLabel>.card-top>.check-box {
+    border: 2px solid #0177b6;
+  }
+
+  #totalCard-8:checked~.commonLabel>.card-top>.top-icon {
+    color: #0177b6;
+  }

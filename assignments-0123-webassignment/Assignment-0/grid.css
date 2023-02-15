@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    height: 100vh;
+}
+.container{
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(8,1fr);
+}
+.container>div:nth-child(even){
+    background-color: rgb(89, 64, 199);
+    color:white;
+    border:solid;
+}   
+.container>div:nth-child(odd){
+    background-color: darkcyan;
+    color:white;
+    border:solid;
+}

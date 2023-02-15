@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+}
+
+.container>div {
+    float: left;
+    clear: right;
+    min-width: calc(100% / 8);
+    min-height: calc(100% / 8);
+}
+
+.container>div:nth-child(even) {
+    background-color: rgb(89, 64, 199);
+    color: white;
+    bordeR: solid;
+}
+
+.container>div:nth-child(odd) {
+    background-color: darkcyan;
+    color: white;
+    border: solid;
+}
